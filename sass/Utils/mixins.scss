@@ -1,0 +1,14 @@
+// responsive
+@mixin desktop {
+
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin display-center 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

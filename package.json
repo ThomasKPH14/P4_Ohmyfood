@@ -1,0 +1,19 @@
+{
+  "name": "p4_ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasKPH14/P4_Ohmyfood.git"
+  },
+  "author": "TK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomasKPH14/P4_Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/ThomasKPH14/P4_Ohmyfood#readme"
+}
