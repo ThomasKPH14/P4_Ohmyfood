@@ -1,0 +1,49 @@
+*
+{
+    font-family: "Roboto-Black", sans-serif;  
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 768px;
+}
+
+header {
+    @include display-center;
+
+    .logo {
+        @include top-bottom;
+        width: 162px;
+    }
+
+    .maps {
+        @include objet-center;
+        background-color: $grey;
+        height: 50px;
+        width: 100%;
+        box-shadow: inset 0px 2px 2px 0px #d6d1d1;
+    }
+
+    .maps span {
+        color: #353535;
+        
+    }
+
+    .search 
+    {
+        width: 135px;
+        margin-left: 17px;
+        background-color: transparent;
+        border: none;
+        color: #353535;
+        font-weight: 500;
+        font-size: 16px;
+        font-weight: 500;
+        
+        
+    }
+
+}

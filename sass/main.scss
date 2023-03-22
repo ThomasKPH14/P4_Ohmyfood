@@ -1,2 +1,4 @@
-@import"./Utils/mixins.scss";
+@import "./Utils/variables";
+@import "./Utils/mixins";
 @import "./Layout/header";
+@import "./Pages/accueil.scss";
