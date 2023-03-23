@@ -1,7 +1,13 @@
-header{
+header {
     @include display-center;
-}
 
-.logo{
-    width: 162px;
+    .logo {
+        width: 162px;
+        @include top-bottom;
+
+    }
+
+  
+
+
 }

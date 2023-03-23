@@ -1,6 +1,5 @@
-*
-{
-    font-family: "Roboto-Black", sans-serif;  
+* {
+    font-family: "Roboto-Black", sans-serif;
 }
 
 body {
@@ -10,40 +9,46 @@ body {
     margin: auto;
     max-width: 768px;
 }
+// localisation
+.maps {
+    @include objet-center;
+    background-color: $grey;
+    height: 50px;
+    width: 100%;
+    box-shadow: inset 0px 2px 2px 0px #d6d1d1;
 
-header {
-    @include display-center;
-
-    .logo {
-        @include top-bottom;
-        width: 162px;
-    }
-
-    .maps {
-        @include objet-center;
-        background-color: $grey;
-        height: 50px;
-        width: 100%;
-        box-shadow: inset 0px 2px 2px 0px #d6d1d1;
-    }
-
-    .maps span {
-        color: #353535;
-        
-    }
-
-    .search 
-    {
+    &__search {
         width: 135px;
         margin-left: 17px;
         background-color: transparent;
         border: none;
         color: #353535;
         font-weight: 500;
+        font-weight:bold;
         font-size: 16px;
-        font-weight: 500;
-        
-        
     }
 
+    & span {
+        color: #353535;
+    }
+
+}
+// Titre + p + exp
+.title-button {
+    @include display-center;
+    @include grey-background;
+    text-align: center;
+    padding-top: 16px;
+
+    & h1 {
+        font-size: 24px;
+        width: 275px;
+    }
+
+    & p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 100;
+        color: #353535;
+    }
 }
