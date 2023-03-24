@@ -62,7 +62,7 @@ body {
     margin-top: 48px;
 
     & h2 {
-        margin-left: 20px;
+        margin-left: 15px;
 
     }
 }
@@ -106,5 +106,78 @@ body {
     &__text {
         display: flex;
         align-items: center;
+    }
+}
+
+// Restaurants
+.restaurants {
+    @include grey-background;
+    padding-top: 30px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+
+    & h2 {
+        margin-left: 15px;
+    }
+
+
+    &__secondcont {
+
+        display: flex;
+        flex-direction: column;
+        color: black;
+        margin: 17px 17px;
+        background-color: $white;
+        height: 251px;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+
+    &__img {
+        object-fit: cover;
+        object-position: 50% 90%;
+        height: 180px;
+        border-radius: 20px 20px 0px 0px;
+        width: 100%;
+    }
+    & h3
+    {
+        margin-top: 16px;
+        margin-left: 12px;
+        margin-bottom: 7px;
+    }
+    & p
+    {
+        margin-left: 12px;
+        margin-top: 0px;
+    }
+
+    & i
+    {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 57px;
+        right: 27px;
+        font-size: 30px;
+        
+    }
+
+    & span 
+    {
+        display: flex;
+        justify-content: center;
+        align-self: end;
+        margin-top: -168px;
+        margin-right: 20px;
+        margin-bottom: 133px;
+        background-color: $color-tertiary;
+        color: #008766;
+        font-size: 14px;
+        width: 80px;
+        padding: 6px 8px 6px 8px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
     }
 }
