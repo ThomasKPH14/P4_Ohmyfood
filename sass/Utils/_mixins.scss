@@ -1,10 +1,17 @@
 // responsive
-@mixin desktop {
-
-    @media (max-width: 1440px) {
-        @content;
+  @mixin desktop {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: desktop)) {
+      @content;
     }
-}
+  }
+
+
+  @mixin tablet {
+    @media (min-width:768px) and (max-width:1023px) {
+      @content;
+    }
+  }  
+
 // Mise en page
 @mixin display-center {
     display: flex;
@@ -39,5 +46,12 @@
     border-radius: 25px;
     border: none;
     margin: 27px 0 60px 0;
+}
+
+@mixin marge
+{
+    padding-left: 139px;
+    padding-right: 139px;
+
 }
 

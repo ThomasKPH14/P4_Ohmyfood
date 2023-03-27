@@ -8,8 +8,15 @@ body {
     flex-direction: column;
     margin: auto;
     max-width: 768px;
-}
 
+    @include desktop {
+        max-width: 1440px;
+    }
+    @include tablet{
+        max-width: 1023px;
+    }
+
+}
 // localisation
 .maps {
     @include objet-center;
@@ -32,7 +39,6 @@ body {
     & span {
         color: #353535;
     }
-
 }
 
 // Titre + p + exp
@@ -53,6 +59,24 @@ body {
         font-weight: 100;
         color: #353535;
     }
+
+    @include desktop {
+        & h1 {
+            width: 100%;
+            font-size: 35px;
+        }
+
+        & p {
+            font-size: 17px;
+        }
+    }
+
+    @include tablet {
+        & h1 {
+            width: 100%;
+        }
+    }
+
 }
 
 // Fonctionement
@@ -64,6 +88,26 @@ body {
     & h2 {
         margin-left: 15px;
 
+    }
+
+    @include desktop {
+        @include marge;
+        align-items: center;
+
+        & h2 {
+            display: flex;
+            align-self: baseline;
+            margin-left: 46px;
+        }
+    }
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        & h2 {
+            margin-left: 0;
+        }
+        
     }
 }
 
@@ -107,6 +151,22 @@ body {
         display: flex;
         align-items: center;
     }
+
+    @include desktop {
+
+        flex-direction: unset;
+        width: 95%;
+        gap: 50px;
+
+        & {
+            width: 92%
+        }
+    }
+
+    @include tablet 
+    {
+        width: 33%;
+    }
 }
 
 // Restaurants
@@ -141,31 +201,29 @@ body {
         border-radius: 20px 20px 0px 0px;
         width: 100%;
     }
-    & h3
-    {
+
+    & h3 {
         margin-top: 16px;
         margin-left: 12px;
         margin-bottom: 7px;
     }
-    & p
-    {
+
+    & p {
         margin-left: 12px;
         margin-top: 0px;
     }
 
-    & i
-    {
+    & i {
         display: flex;
         justify-content: flex-end;
         position: relative;
         bottom: 57px;
         right: 27px;
         font-size: 30px;
-        
+
     }
 
-    & span 
-    {
+    & span {
         display: flex;
         justify-content: center;
         align-self: end;
@@ -179,5 +237,38 @@ body {
         padding: 6px 8px 6px 8px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
         border-radius: 2px;
+    }
+
+    @include desktop {
+        width: 100%;
+
+        &__cont {
+            display: flex;
+        }
+
+        &__secondcont {
+            width: -moz-available;
+        }
+    }
+
+    @include tablet
+    {
+        
+        & h2
+        {
+            display: flex;
+            justify-content: center;
+        }
+        &__cont {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        &__secondcont {
+            width: 40%;
+        }
     }
 }

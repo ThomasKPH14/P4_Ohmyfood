@@ -5,15 +5,25 @@ footer
     flex-direction:column;
     padding-top: 10px;
     padding-left: 15px;
-    height: 190px;
+    height: 197px;
     & h2 
     {
         color: $white;
         font-family: "Shrikhand", sans-serif ;
-        margin-left: 15px;
         font-weight: 400;
         font-size: 18px;
     }
+    @include desktop
+    {
+        
+        height: 114px;
+        & h2{
+            margin-top: 3px;
+            position: absolute;
+            right: 100px;
+        }
+    }
+    
 }
 .footerall
 {
@@ -30,6 +40,21 @@ footer
     {
         text-decoration: none;
         color: $white;
+        line-height: 30px;
+    }
+    @include desktop
+    {
+        flex-direction: unset;
+        justify-content: end;
+        gap: 50px;
+        margin-right: 280px;
+        margin-top: 50px;
+    }
+    @include tablet
+    {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
     }
 }
 .dec
