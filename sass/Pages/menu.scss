@@ -1,7 +1,34 @@
+* {
+    font-family: "Roboto-Black", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 768px;
+
+    @include desktop {
+        max-width: 1440px;
+    }
+    @include tablet{
+        max-width: 1023px;
+    }
+
+}
 .imgmenu {
     width: 100%;
     object-fit: cover;
     height: 275px;
+    @include desktop
+    {
+        height: 423px;
+    }
+    @include tablet
+    {
+        height: 350px;
+    }
 }
 
 .bloccards {
@@ -10,7 +37,6 @@
     flex-direction: column;
     margin: -56px 0 0;
     border-radius: 40px 40px 0px 0px;
-
     & h2 {
         font-family: "Shrikhand", sans-serif;
         font-weight: 400;
@@ -18,6 +44,16 @@
         margin-top: 30px;
         margin-bottom: 0px;
         margin-left: 17px;
+        @include desktop
+        {
+            display: flex;
+            justify-content: center;
+        }
+        @include tablet
+        {
+            display: flex;
+            justify-content: center;
+        }
         
     }
 
@@ -26,14 +62,33 @@
         background-color: transparent;
         border: none;
         font-size: 30px;
-        position: absolute;
-        top: 22.4%;
-        left: 79%;
+        margin-top: -36px;
+        margin-left: 277px;
+        @include desktop 
+        {
+            margin-left: 368px;
+        }
+        @include tablet
+        {
+            margin-left: 354px;
+        }
+
+    }
+    @include desktop
+    {
+        margin-left: 192px;
+        margin-right: 192px;
+        margin-top: -70px;
+    }
+    @include tablet
+    {
+        margin-left: 60px;
+        margin-right: 60px;
     }
 }
 
 .cards {
-    &__list 
+    &__list
     {
         & h3 {
             margin-left: 13px;
@@ -55,6 +110,16 @@
             margin-top: 8px;
             font-size: 14px;
         }
+        @include desktop
+        {
+            margin-left: 210px;
+            margin-right: 210px;
+        }
+        @include tablet
+        {
+            margin-right: 90px;
+            margin-left: 90px;
+        }
     }
 
     &__plate 
@@ -74,10 +139,18 @@
         &__price 
         {
             position: relative;
-            left: 290px;
-            top: -34px;
+            top: -44%;
+            left: 87%;
             font-weight: 700;
             width: max-content;
+            @include desktop
+            {
+            left: 90%;                            
+            }
+            @include tablet
+            {
+            left: 90%;   
+            }
         }
     }
 

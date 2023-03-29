@@ -25,5 +25,10 @@ header {
                 right: 70px;
                 font-size: 25px;
                 color: #353535;
+                @include desktop
+                {
+                    right: 487px;
+                }
             }
         }
+        
