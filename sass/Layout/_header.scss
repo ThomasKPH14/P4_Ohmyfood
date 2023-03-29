@@ -13,3 +13,17 @@ header {
         }
         }
 }
+// Header menu
+.logarrow
+        {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            & i 
+            {
+                position: relative;
+                right: 70px;
+                font-size: 25px;
+                color: #353535;
+            }
+        }

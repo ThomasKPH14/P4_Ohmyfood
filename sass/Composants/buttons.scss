@@ -2,5 +2,10 @@
 .bttn
     {
         @include purple-bttn;
-        
     }
+.bttnmenu
+{
+    
+         @include bttn-menu;
+    
+}
