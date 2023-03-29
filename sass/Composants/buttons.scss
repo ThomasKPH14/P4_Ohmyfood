@@ -7,5 +7,39 @@
 {
     
          @include bttn-menu;
-    
+}
+
+.restaurants
+{
+    & button 
+    {
+        position: relative;
+        bottom: 57px;
+        left: 83%;
+        font-size: 30px;
+        width: max-content;
+        border: none;
+        background: transparent;
+        
+        &.far
+        {
+            background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+            background-size: 100% 0%;
+            background-repeat: no-repeat;
+            transition: background-size 0.5s ease-in-out;
+            background-clip: text;
+            -webkit-background-clip: text;
+            
+            &:hover
+            { 
+                background-size: 100% 100%;
+                background-position: center bottom;  
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+            }
+            
+        }
+    }
 }

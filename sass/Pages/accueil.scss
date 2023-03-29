@@ -84,8 +84,10 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 48px;
+    
 
-    & h2 {
+    & h2 
+    {
         margin-left: 15px;
 
     }
@@ -116,8 +118,7 @@ body {
     flex-direction: column;
     gap: 22px;
     padding-left: 25px;
-
-    & li {
+   & li {
         @include grey-background;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         display: flex;
@@ -150,6 +151,11 @@ body {
     &__text {
         display: flex;
         align-items: center;
+    }
+    & :hover
+    {
+        background: #F5EDFF;
+        transition:  0.4s ease-in-out;
     }
 
     @include desktop {
@@ -213,16 +219,6 @@ body {
         margin-top: 0px;
     }
 
-    & i {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        bottom: 57px;
-        right: 27px;
-        font-size: 30px;
-
-    }
-
     & span {
         display: flex;
         justify-content: center;
@@ -247,7 +243,8 @@ body {
         }
 
         &__secondcont {
-            width: -moz-available;
+            width: 100%;
+            
         }
     }
 
@@ -269,6 +266,7 @@ body {
 
         &__secondcont {
             width: 40%;
+            
         }
     }
 }

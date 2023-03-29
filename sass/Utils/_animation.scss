@@ -1,0 +1,30 @@
+// Loader
+@keyframes spin 
+{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes hide {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none;z-index: -1; }
+    
+  }
+
+// Heart button
+  @keyframes heart
+{
+    0%{
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.7;
+        transform: translateY(10%);
+
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
