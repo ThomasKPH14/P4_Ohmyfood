@@ -12,6 +12,9 @@ footer
         font-family: "Shrikhand", sans-serif ;
         font-weight: 400;
         font-size: 18px;
+        left: 88%;
+        
+        
     }
     @include desktop
     {
@@ -19,8 +22,10 @@ footer
         height: 114px;
         & h2{
             margin-top: 3px;
-            position: absolute;
-            right: 100px;
+            position: relative;
+            left: 82%;
+            
+            
         }
     }
     

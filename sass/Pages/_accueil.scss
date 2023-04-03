@@ -187,7 +187,6 @@ body {
         margin-left: 15px;
     }
 
-
     &__secondcont {
 
         display: flex;
@@ -198,6 +197,7 @@ body {
         height: 251px;
         text-decoration: none;
         border-radius: 20px;
+        position: relative;
     }
 
     &__img {
@@ -223,9 +223,9 @@ body {
         display: flex;
         justify-content: center;
         align-self: end;
-        margin-top: -168px;
-        margin-right: 20px;
-        margin-bottom: 133px;
+        position: absolute;
+        top: 6%;
+        right: 6%;
         background-color: $color-tertiary;
         color: #008766;
         font-size: 14px;

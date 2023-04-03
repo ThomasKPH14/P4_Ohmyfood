@@ -1,0 +1,90 @@
+// Boutton commanded
+.bttn {
+    @include purple-bttn;
+
+}
+
+// Boutton explored    
+.bttnmenu {
+
+    @include bttn-menu;
+}
+
+// Heart animation menu
+.restaurants {
+    & i {
+        //position: relative;
+        //bottom: 57px;
+        //left: 83%;
+        font-size: 30px;
+        width: max-content;
+        border: none;
+        background: transparent;
+
+        &.far {
+            position: absolute;
+            bottom: 17px;
+            right: 22px;
+
+            @include heart;
+
+            &:hover {
+                @include heart-hover;
+
+            }
+            @include desktop{
+                bottom: 22px;
+            }
+        }
+        &.heart-hover{
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            position: absolute;
+        }
+    }
+}
+
+// Heart animation restaurant
+.bloccards {
+    position: relative;
+    &__btn {
+        font-size: 30px;
+        border: none;
+        background-color: transparent;
+        //bottom: 40px;
+        //left: 34%;
+        
+        
+
+        & i {
+            position: absolute;
+            top: 34px;
+            right: 45px;
+            @include heart;
+            
+            &:hover {
+                @include heart-hover;
+            
+            }
+            @include tablet{
+                right: 200px;
+            }
+            @include desktop{
+                right: 300px;
+            }
+            &.heart-hover{
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+                position: absolute;
+            }
+        }
+        
+        @include desktop {
+            margin-left: 368px;
+        }
+        
+        @include tablet {
+            margin-left: 354px;
+        }
+    }
+}

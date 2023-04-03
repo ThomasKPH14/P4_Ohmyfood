@@ -1,3 +1,4 @@
+// form
 * {
     font-family: "Roboto-Black", sans-serif;
 }
@@ -18,6 +19,7 @@ body {
     }
 
 }
+
 
 .imgmenu {
     width: 100%;
@@ -59,43 +61,7 @@ body {
         }
 
     }
-
-    &__btn {
-        background-color: transparent;
-        border: none;
-        font-size: 30px;
-        margin-top: -36px;
-        margin-left: 277px;
-
-        & i
-        {
-            background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-            background-size: 100% 0%;
-            background-repeat: no-repeat;
-            transition: background-size 0.5s ease-in-out;
-            background-clip: text;
-            -webkit-background-clip: text;
-            
-            &:hover
-            { 
-                background-size: 100% 100%;
-                background-position: center bottom;  
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-weight: bold;
-            }           
-        }
-
-        @include desktop {
-            margin-left: 368px;
-        }
-
-        @include tablet {
-            margin-left: 354px;
-        }
-    }
-
+    
     @include desktop {
         margin-left: 192px;
         margin-right: 192px;
@@ -111,6 +77,7 @@ body {
 .cards {
     &__list {
         max-width: 96%;
+
         & h3 {
             margin-left: 13px;
             font-weight: 300;
@@ -124,19 +91,19 @@ body {
         & h4 {
             margin-top: 13px;
             margin-bottom: 0px;
-            white-space: nowrap; 
-            overflow: hidden; 
-            text-overflow: ellipsis; 
-            width: 80%; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 80%;
         }
 
         & p {
             margin-top: 8px;
             font-size: 14px;
-            white-space: nowrap; 
+            white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis; 
-            width: 80%; 
+            text-overflow: ellipsis;
+            width: 80%;
         }
 
         @include desktop {
@@ -160,7 +127,7 @@ body {
         background-color: $white;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         position: relative;
-        overflow: hidden ; 
+        overflow: hidden;
         cursor: pointer;
         transition: 0.6s ease-in-out;
 
@@ -175,7 +142,7 @@ body {
             font-weight: 700;
             max-width: 30px;
             overflow: hidden;
-            transition: 0.5s ease-in-out ;
+            transition: 0.5s ease-in-out;
 
             @include desktop {
                 left: 90%;
@@ -187,38 +154,41 @@ body {
         }
 
         &__box {
-            position: absolute; 
-            height: 100%; 
-            top: 0; 
-            right: 0; 
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 0;
             width: max-content;
-            overflow: hidden; 
-            
+            overflow: hidden;
+
             & span {
                 position: relative;
                 font-size: 20px;
-                background:  #99E2D0;
+                background: #99E2D0;
                 color: $white;
                 width: 60px;
                 height: 100%;
-                right: -60px; 
+                right: -60px;
                 border-radius: 0 15.0431px 15.0431px 0px;
                 @include display-center;
                 justify-content: center;
                 transition: 0.5s ease-in-out;
             }
-            
+
             & i {
                 transform: rotate(-120deg);
                 transition: 0.6s ease-in-out;
             }
         }
+
         &:hover {
             padding-right: 60px;
             transition: 0.6s ease-in-out;
+
             & span {
-                right: 0px; 
+                right: 0px;
             }
+
             & i {
                 transform: rotate(0deg);
                 transition: 0.6s ease-in-out;
@@ -227,21 +197,22 @@ body {
     }
 }
 
-.delayone
-{
+
+// Delay menu anim 
+.delayone {
     @include animenu;
     -webkit-animation-delay: 0.5s;
-        animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
-.delaytwo{
+.delaytwo {
     @include animenu;
     -webkit-animation-delay: 0.7s;
-        animation-delay: 0.7s;
+    animation-delay: 0.7s;
 }
-.delaythree
-{
+
+.delaythree {
     @include animenu;
     -webkit-animation-delay: 0.9s;
-        animation-delay: 0.9s;
+    animation-delay: 0.9s;
 }
